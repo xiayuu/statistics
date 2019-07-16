@@ -2,7 +2,7 @@
 
 import csv
 
-dest = 'csdn.csv'
+dest = 'cnblog.csv'
 with open(dest,  encoding='utf-8') as dest_f:
     data_iter = csv.reader(dest_f)
     data = [ data for data in data_iter ]
