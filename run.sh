@@ -2,5 +2,4 @@
 
 wget -q http://localhost:5000/results/dump/cnblog.csv
 
-
-python preprocess.py | tail 
+python3 preprocess.py | tail
