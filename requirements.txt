@@ -1,1 +1,1 @@
-pkuseg
+jieba
