@@ -19,7 +19,7 @@ for l in data:
     print('view:  %s' % l[1])
 """
 
-for x, w in jieba.analyse.extract_tags(data[1][2], withWeight=True):
+for x, w in jieba.analyse.extract_tags(data[-1][2], withWeight=True):
     print('%s, %s' % (x, w))
 
 
