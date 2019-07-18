@@ -19,7 +19,7 @@ for l in data:
 
 sws = []
 
-for f in os.listdir('stopworlds'):
+for f in os.listdir('stopwords'):
     data = open('stopwords/' + f)
     sws.append(data.readline())
 
