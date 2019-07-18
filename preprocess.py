@@ -43,7 +43,7 @@ for l in data:
             keyword_dict[w] = keyword_dict.get(w, default=0) + 1
 
 
-f = open('keyword.txt', 'w')
+f = open('keyword.txt', 'w+')
 for k, v in keyword_dict:
     f.write("%s, %d\n" % (k, v))
 
