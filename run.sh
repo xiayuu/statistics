@@ -6,3 +6,4 @@ python3 preprocess.py
 
 tail keyword.txt
 wc -l keyword.txt
+cp keyword.txt /root/ -f

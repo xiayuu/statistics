@@ -44,7 +44,7 @@ for l in data:
 
 
 f = open('keyword.txt', 'w+')
-for k, v in keyword_dict:
+for k, v in keyword_dict.iteritems():
     f.write("%s, %d\n" % (k, v))
 
 f.close()
