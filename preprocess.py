@@ -20,8 +20,8 @@ for l in data:
 sws = []
 
 for f in os.listdir('stopwords'):
-    data = open('stopwords/' + f)
-    sws.append(data.readline())
+    words = open('stopwords/' + f)
+    sws.append(words.readline())
 
 #过滤出需要的词性
 def filter_tag(c, taglist):
