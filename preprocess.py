@@ -40,6 +40,8 @@ keyword_dict = {}
 for l in data:
     for w, f in pseg.cut(l[2]):
         if filter_stopword(w) and filter_tag(f, taglist):
+            if f == 'eng':
+                w = w.lower()
             keyword_dict[w] = keyword_dict.get(w, 0) + 1
 
 
