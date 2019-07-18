@@ -2,6 +2,9 @@
 # encoding=utf-8
 import csv
 import jieba
+import jieba.posseg
+import jieba.analyse
+
 
 dest = 'cnblog.csv'
 
