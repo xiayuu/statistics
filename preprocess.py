@@ -29,7 +29,7 @@ def filter_tag(c, taglist):
 
 #从中止词中过滤掉不需要的内容
 def filter_stopword(w):
-    return w in sws
+    return w not in sws
 
 #关注英文，名词，专名
 taglist = ['eng', 'n', 'nz']
