@@ -35,9 +35,16 @@ def filter_stopword(w):
 taglist = ['eng', 'n', 'nz']
 
 
-res = [ w for w, f in pseg.cut(data[-2][2]) if filter_stopword(w) and filter_tag(f, taglist) ]
+keyword_dict = {}
 
-print(res)
+for l in data:
+    for w, f in pseg.cut(l[2]):
+        if filter_stopword(w) and filter_tag(f, taglist):
+            keyword_dict[w] = keyword_dict.get(w, default=0) + 1
 
 
+f = open('keyword.txt', 'w')
+for k, v in keyword_dict:
+    f.write("%s, %d\n" % (k, v))
 
+f.close()
