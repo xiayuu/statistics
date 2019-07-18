@@ -40,7 +40,7 @@ keyword_dict = {}
 for l in data:
     for w, f in pseg.cut(l[2]):
         if filter_stopword(w) and filter_tag(f, taglist):
-            keyword_dict[w] = keyword_dict.get(w, default=0) + 1
+            keyword_dict[w] = keyword_dict.get(w, 0) + 1
 
 
 f = open('keyword.txt', 'w+')
